@@ -1,0 +1,223 @@
+* { margin: 0; padding: 0; }
+body {	overflow-x: hidden; background-color: black;}
+
+.header {
+	position: relative;
+	background-image: url("img/stars.jpg");
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transition: all 2s;
+	opacity: 0
+}
+
+.header > img {
+	height: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-radius: 100%;
+	background-color: black;
+	position: relative;
+  	top: 50%;
+  	z-index: 1000;
+	transform: translateY(-50%);
+}
+
+.infocards {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+	background-color: black;
+	transition: all 2s;
+	position: relative;
+}
+
+.infocards:nth-child(2) img {
+	min-width: 100%;
+	min-height: 100%;
+	filter: brightness(60%) grayscale(10%);
+	opacity: 0;
+	transition: opacity 2s;
+	background-color: red;
+	z-index: 100;
+}
+
+.infocards:nth-child(2) p {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 100%;
+    color: #FFF;
+    margin: 5px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Exo', sans-serif;
+    transition: opacity 3s;
+    opacity: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 1);
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: all 3s;
+    z-index: 55;
+}
+
+#htcvid {
+	z-index: 50;
+	position: absolute;
+	top: 0%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 2s;
+	
+}
+
+.infocards:nth-child(3) {opacity: 0; transition: all 1s;}
+.infocards:nth-child(4) {opacity: 0; transition: all 1s;}
+
+.infocards:nth-child(3) img {
+	width: 100%;
+	height: 100%;
+	filter: brightness(90%) grayscale(40%);
+	opacity: 1;
+	transition: opacity 1s;
+	z-index: -1;
+}
+
+.infocards:nth-child(3) p:nth-child(1) {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid white;
+    font-family: 'Exo', sans-serif;
+    padding: 10px 20px 10px 20px;
+    font-size: 4vh;
+    z-index: 1;
+}
+
+#hrslist {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid white;
+    font-family: 'Exo', sans-serif;
+    padding: 10px 20px 10px 20px;
+    font-size: 3vh;
+    z-index: 1;
+}
+
+#abtus {
+    position: absolute;
+    left: 45%;
+    top: 10%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid white;
+    font-family: 'Exo', sans-serif;
+    padding: 10px 20px 10px 20px;
+    font-size: 4vh;
+    z-index: 1;
+}
+
+#abtusdesc {
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 10px 20px 10px 20px;
+    font-size: 3.4vh;
+    z-index: 1;
+    width: 40%;
+    padding: 20px;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	border-right: 5px solid #1e1144;
+	border-left: 0;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+#gamelist {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+}
+
+#gmlist {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 10px 20px 10px 20px;
+    font-size: 4vh;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    text-align: left;
+    height: 5%;
+}
+
+.game {
+	position: relative; 
+	width: 100%;
+	height: 8%;
+	border-bottom: 1px solid grey;
+}
+
+#gmthumb {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	width: 15%;
+}
+
+.game p {
+	position: absolute;
+	color: white;
+	left: 17%;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3.5vh;
+	top: 50%;
+	transform: translateY(-50%);
+}	
+
+#down {
+	position: fixed;
+	filter: invert(100%);
+	top: 90%;
+	width: 3%;
+	left: 49%;
+	border: 1px solid black;
+	transition: all 1s;
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, 0.15);
+}

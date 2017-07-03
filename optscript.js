@@ -15,6 +15,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady() {
+	player.playVideo();
 	player.mute();
 }
 
@@ -37,7 +38,6 @@ window.onscroll = function() {
 	if (window.scrollY > 400) {
 		htcvid.style.opacity = "1";
 		document.querySelector(".infocards:nth-child(2) p").style.opacity = "1";
-		player.playVideo();
 		downArrow.style.opacity = "0";
 		header.style.opacity = "0";
 	} 

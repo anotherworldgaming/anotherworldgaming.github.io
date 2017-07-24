@@ -1,2 +1,2 @@
 # anotherworldgaming.github.io
-Another World Gaming LLC
+[Another World Gaming LLC](anotherworldgaming.com)

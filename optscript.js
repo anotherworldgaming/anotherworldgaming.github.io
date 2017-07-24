@@ -25,7 +25,6 @@ var time;
 var flipStart = 0;
 var player;
 window.onload = function() {
-	alert("First time customers get 50% off!");
 	header = document.querySelector(".header");
 	downArrow = document.getElementById("down");
 	htcvid = document.getElementById("htcvid");
